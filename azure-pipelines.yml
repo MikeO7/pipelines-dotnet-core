@@ -18,8 +18,9 @@ steps:
   inputs:
     SonarCloud: 'SonarCloud'
     organization: 'mikeo7-github'
-    scannerMode: 'CLI'
-    configMode: 'file'
+    scannerMode: 'MSBuild'
+    projectKey: 'mike2.visualstudio.com.sonarexamples.netfx'
+    projectName: 'test Sonar Example -NetFx'
 
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
